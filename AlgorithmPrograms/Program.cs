@@ -7,7 +7,7 @@ namespace AlgorithmPrograms
         {
             Console.WriteLine("Welcome to the Algorithm Programs\n=================================");
             bool end = true;
-            Console.WriteLine("1. Permutation of a word\n2. Binary Search\n3. End of program");
+            Console.WriteLine("1. Permutation of a word\n2. Binary Search\n3. Inssertion Sorting\n4. End of program");
             while (end)
             {
                 Console.Write("Choose an option to execute : ");
@@ -37,6 +37,12 @@ namespace AlgorithmPrograms
                         }
                         break;
                     case 3:
+                        String[] array1 = { "Baghel", "Cat", "English", "Vishwas", "Name", "Apple" };
+                        InsertionSort sorting = new InsertionSort();
+                        sorting.Sorting(array1);
+                        sorting.DisplayArray(array1);
+                        break;
+                    case 4:
                         end = false;
                         break;
                     default:
