@@ -8,7 +8,7 @@ namespace AlgorithmPrograms
             Console.WriteLine("Welcome to the Algorithm Programs\n=================================");
             bool end = true;
             Console.WriteLine("1. Permutation of a word\n2. Binary Search\n3. Inssertion Sorting\n4. " +
-                "Bubble Sorting\n5. Merge Sorting\n6. Anagram Detection\n7. End of program");
+                "Bubble Sorting\n5. Merge Sorting\n6. Anagram Detection\n7. Prime Numbers\n8. End of program");
             while (end)
             {
                 Console.Write("Choose an option to execute : ");
@@ -58,6 +58,10 @@ namespace AlgorithmPrograms
                         detecting.DetectingAnagrams();
                         break;
                     case 7:
+                        PrimeNumbers prime =  new PrimeNumbers();
+                        prime.PrimeNum();
+                        break;
+                    case 8:
                         end = false;
                         break;
                     default:
