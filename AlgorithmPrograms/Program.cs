@@ -8,7 +8,7 @@ namespace AlgorithmPrograms
             Console.WriteLine("Welcome to the Algorithm Programs\n=================================");
             bool end = true;
             Console.WriteLine("1. Permutation of a word\n2. Binary Search\n3. Inssertion Sorting\n4. " +
-                "Bubble Sorting\n5. End of program");
+                "Bubble Sorting\n5. Merge Sorting\n6. End of program");
             while (end)
             {
                 Console.Write("Choose an option to execute : ");
@@ -50,6 +50,10 @@ namespace AlgorithmPrograms
                         BubbleSort.DisplayArray(array2);
                         break;
                     case 5:
+                        MergeSort mergesorting = new MergeSort();
+                        mergesorting.MergeSorting();
+                        break;
+                    case 6:
                         end = false;
                         break;
                     default:
